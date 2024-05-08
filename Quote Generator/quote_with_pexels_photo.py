@@ -295,7 +295,7 @@ if __name__ == "__main__" :
 	# Gets random quote from API
 	quote_content, quote_author = get_random_quote()
 
-	# Gets random quote from pexels API
+	# Gets random photo from pexels API
 	pexels_photos_img = get_random_photo(query = "Aesthetic landscape scenery", page = random.randrange(10))
 	
 	# 👓👓👓

@@ -7,8 +7,8 @@ import requests, random, time
 __QUOTABLE_API_URL = "https://api.quotable.io/quotes/random"
 
 # Already includes GET request endpoint
-__PEXELS_API_URL = "https://api.pexels.com/v1/search"
-__PEXELS_API_KEY = "YOUR PEXELS API KEY HERE"
+__PEXELS_API_KEY        = "YOUR PEXELS API KEY HERE"
+__PEXELS_API_PHOTOS_URL = "https://api.pexels.com/v1/search"
 
 __GRADIENT_BASE_RGBA    = (16, 16, 16, 200)
 __GRADIENT_H_PERCENTAGE = 1
@@ -226,8 +226,8 @@ def calculate_rendered_text_wh(text, font) :
 	draw_layer          = ImageDraw.Draw(render_text_on)
 	space_taken_by_text = draw_layer.textbbox(xy = (0, 0), text = text, font = font)
 
-	text_w = space_taken_by_text[0] + space_taken_by_text[2]
-	text_h = space_taken_by_text[1] + space_taken_by_text[3]
+	text_w = space_taken_by_text[2] - space_taken_by_text[0]
+	text_h = space_taken_by_text[3] - space_taken_by_text[1]
 
 	return (text_w, text_h)
 

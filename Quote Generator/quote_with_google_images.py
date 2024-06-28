@@ -4,7 +4,6 @@ from io  import BytesIO
 import requests, random
 
 # For Quote requests
-
 __APININJAS_API_KEY : str = ""
 __APININJAS_API_URL : str = "https://api.api-ninjas.com/v1/quotes" # Already includes GET request endpoint
 

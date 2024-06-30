@@ -513,8 +513,8 @@ def make_quote() -> Image :
 
 	# Overlays quote onto photo
 	quote_y : int = google_image_img.size[1] - int(quote_img.size[1] * 1.25)
-	
 	google_image_img.paste(quote_img, (0, quote_y), mask = quote_img)
-	google_image_img.show()
 
-if __name__ == "__main__" : make_quote()
+	return google_image_img
+
+if __name__ == "__main__" : make_quote().show()

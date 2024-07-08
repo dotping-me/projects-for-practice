@@ -31,7 +31,7 @@ def load_embedded(bstring : bytes) -> bytes :
 def main() -> None :
 	
 	# Encoding
-	encoded : bytes = embed(fpath = 'D:\\code\\edutech\\words-and-pictures\\Assets\\Font\\SourceCodePro-Regular.ttf')
+	encoded : bytes = embed(fpath = 'Path to File')
 
 	# Decoding
 	decoded : bytes = load_embedded(bstring = encoded)

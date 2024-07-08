@@ -33,7 +33,7 @@ def load_embedded(bstring : bytes) -> Image :
 def main() -> None :
 	
 	# Encoding
-	bstring : bytes = embed(img_fpath = 'D:\\code\\edutech\\words-and-pictures\\Assets\\Font\\SourceCodePro-Regular.ttf')
+	bstring : bytes = embed(img_fpath = 'Path to Image')
 
 	# Decoding
 	img : Image = load_embedded(bstring = bstring)
